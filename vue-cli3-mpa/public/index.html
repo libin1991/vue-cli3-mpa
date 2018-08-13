@@ -7,6 +7,7 @@
     <title>
         <%= htmlWebpackPlugin.options.title %>
     </title>
+    <script src="https://cdn.bootcss.com/vConsole/3.2.0/vconsole.min.js"></script>
 </head>
 
 <body>
@@ -16,5 +17,14 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
 </body>
+<script>
+    if (window.CURRENTMODE === 'development' || window.CURRENTMODE === 'test') {
+        // 初始化
+        console.info('%c调起vConsole调试工具',
+            'background: #41b883; color: #fff; padding: 3px; border-radius: 3px; font-weight: normal');
+        var vConsole = new VConsole();
+    }
+
+</script>
 
 </html>

@@ -1,6 +1,6 @@
 <template>
   <div class="demo">
-      <div class="flexible" v-tap="tapHandle">
+      <div class="flexible" @click="tapHandle">
           一个宽755px的div：测试flexible适配效果
       </div>
   </div>

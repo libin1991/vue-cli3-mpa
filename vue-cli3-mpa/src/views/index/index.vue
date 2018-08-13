@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-      <div class="toDemoPage" v-tap="toDemoPage">
+      <div class="toDemoPage" @click="toDemoPage">
           这是个去demo页的button
       </div>
   </div>
